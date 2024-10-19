@@ -15,111 +15,25 @@
 
 <body>
     <header>
-        <nav>
-            <div class="logo">THE WORLD OF CURIOSITY</div>
-            <ul>
-                <li><a href="#chamada">Destaque</a></li>
-                <li><a href="#categoria">Curiosidades</a></li>
-                <li><a href="#hollywood">Curiosidades Hollywood</a></li>
-                <li><a href="#cientificas">Curiosidades Científicas</a></li>
-                <li><a href="#contato">Contato</a></li>
+        <nav class="top-nav">
+            <div class="logo">Animes Online</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li class="dropdown">
+                    <a href="#lista">Lista de Animes</a>
+                </li>
+                <li><a href="#episodios">Episódios</a></li>
+                <li><a href="#generos">Gêneros</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="chamada" class="chamada">
-            <div class="chamada-texto">
-                <h1>OLHA SÓ ISSO</h1>
-                <p>#curiosidade</p>
-            </div>
-
-            <div class="video-destaque">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=EEv-tsY_b1B2OwKE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
-
-        <section id="categoria" class="categoria">
-            <h2>Curiosidades</h2>
-            <div class="categoria-videos">
-                <a href="https://www.youtube.com/watch?v=MLzPk1BbCXE">
-                    <img src="https://img.youtube.com/vi/MLzPk1BbCXE/maxresdefault.jpg" alt="Curiosidade 1" />
-                </a>
-                <a href="https://www.youtube.com/watch?v=qC2fFSb7HNc">
-                    <img src="https://img.youtube.com/vi/qC2fFSb7HNc/maxresdefault.jpg" alt="Curiosidade 2" />
-                </a>
-                <a href="https://www.youtube.com/watch?v=75g620SlWaA">
-                    <img src="https://img.youtube.com/vi/75g620SlWaA/maxresdefault.jpg" alt="Curiosidade 3" />
-                </a>
-                <a href="https://www.youtube.com/watch?v=Eo3-eXjEd8A">
-                    <img src="https://img.youtube.com/vi/Eo3-eXjEd8A/maxresdefault.jpg" alt="Curiosidade 4" />
-                </a>
-            </div>
-        </section>
-
-        <!-- Seção Curiosidades Hollywood -->
-        <section id="hollywood" class="categoria">
-            <h2>Curiosidades Hollywood</h2>
-            <div class="categoria-videos">
-                <a href="https://www.youtube.com/watch?v=L7rs_4zRMhw">
-                    <img src="https://img.youtube.com/vi/L7rs_4zRMhw/maxresdefault.jpg" alt="Curiosidade Hollywood 1" />
-                </a>
-                <a href="https://www.youtube.com/watch?v=spw8FL253hY">
-                    <img src="https://img.youtube.com/vi/spw8FL253hY/maxresdefault.jpg" alt="Curiosidade Hollywood 2" />
-                </a>
-                <a href="https://www.youtube.com/watch?v=GOiqOlcSqMU">
-                    <img src="https://img.youtube.com/vi/GOiqOlcSqMU/maxresdefault.jpg" alt="Curiosidade Hollywood 3" />
-                </a>
-                <a href="https://www.youtube.com/watch?v=pmdCYLmchQ0">
-                    <img src="https://img.youtube.com/vi/pmdCYLmchQ0/maxresdefault.jpg" alt="Curiosidade Hollywood 4" />
-                </a>
-                <a href="https://www.youtube.com/watch?v=2wfO3Zs_TWk">
-                    <img src="https://img.youtube.com/vi/2wfO3Zs_TWk/maxresdefault.jpg" alt="Curiosidade Hollywood 5" />
-                </a>
-            </div>
-        </section>
-
-        <!-- Nova seção Curiosidades Científicas -->
-        <section id="cientificas" class="categoria">
-            <h2>Curiosidades Científicas</h2>
-            <div class="categoria-videos">
-                <a href="https://www.youtube.com/watch?v=gSWFF1dQTIs">
-                    <img src="https://img.youtube.com/vi/gSWFF1dQTIs/maxresdefault.jpg" alt="Curiosidade Científica 1" />
-                </a>
-                <a href="https://www.youtube.com/watch?v=rKCMNzQLIEI">
-                    <img src="https://img.youtube.com/vi/rKCMNzQLIEI/maxresdefault.jpg" alt="Curiosidade Científica 2" />
-                </a>
-                <a href="https://www.youtube.com/watch?v=1m0hqj92ff4">
-                    <img src="https://img.youtube.com/vi/1m0hqj92ff4/maxresdefault.jpg" alt="Curiosidade Científica 3" />
-                </a>
-                <a href="https://www.youtube.com/watch?v=zs6nw_ATMjc">
-                    <img src="https://img.youtube.com/vi/zs6nw_ATMjc/maxresdefault.jpg" alt="Curiosidade Científica 4" />
-                </a>
-                <a href="https://www.youtube.com/watch?v=GgZCN4VJQ-M">
-                    <img src="https://img.youtube.com/vi/GgZCN4VJQ-M/maxresdefault.jpg" alt="Curiosidade Científica 5" />
-                </a>
-            </div>
-        </section>
-
-        <section id="contato" class="contato">
-            <h2>Entre em Contato</h2>
-            <form action="#" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+        <!-- Restante do conteúdo -->
     </main>
 
     <footer>
-        <p>&copy; 2024 The World Of Curiosity. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Animes Online. Todos os direitos reservados.</p>
     </footer>
 </body>
 
