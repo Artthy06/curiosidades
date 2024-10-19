@@ -1,171 +1,59 @@
-/* Estilo geral */
+/* Layout superior semelhante ao da imagem */
+
 body {
-    color: #f5f5f5;
-    background-color: #121212;
-    margin: 0;
+    color: white;
+    background: black;
+    margin: 0px;
     font-family: "Chakra Petch", sans-serif;
-    line-height: 1.6;
-    margin-bottom: 100px;
 }
 
-/* Cabeçalho */
 header {
+    background-color: black;
+    padding: 15px;
+}
+
+.top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1f1f1f;
-    border-bottom: 2px solid #2a7ae4;
-    padding: 20px 40px;
-    font-size: 32px;
-    color: #2a7ae4;
 }
 
-header nav ul {
-    list-style: none;
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style-type: none;
     display: flex;
     gap: 20px;
 }
 
-header nav ul li {
+.nav-links li {
     display: inline-block;
 }
 
-header nav ul li a {
-    color: #f5f5f5;
+.nav-links li a {
+    color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-header nav ul li a:hover {
-    background-color: #2a7ae4;
-    color: #121212;
-}
-
-/* Chamada principal */
-.chamada {
-    background: linear-gradient(135deg, #b89cd5, #8c63b8);
-    padding: 80px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.chamada-texto {
-    margin-right: 5%;
-    max-width: 600px;
-}
-
-.chamada h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #121212;
-}
-
-.chamada p {
-    font-size: 22px;
-    margin-bottom: 40px;
-    color: #f5f5f5;
-}
-
-/* Seção de categoria */
-.categoria {
-    padding: 20px;
-    margin-top: 50px;
-}
-
-.categoria h2 {
-    color: #2a7ae4;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-/* Estilo dos vídeos */
-.categoria-videos {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    padding-bottom: 10px;
-}
-
-.categoria-videos a {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.categoria-videos img {
-    height: 200px;
-    border-radius: 10px;
-    opacity: 0.8;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.categoria-videos img:hover {
-    opacity: 1;
-    transform: scale(1.05);
-    border: 3px solid #2a7ae4;
-}
-
-/* Estilo do formulário */
-.contato {
-    background-color: #1f1f1f;
-    padding: 40px 20px;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-
-.contato h2 {
-    color: #2a7ae4;
-    font-size: 32px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.contato form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contato label {
-    color: #f5f5f5;
-}
-
-.contato input, .contato textarea {
-    padding: 15px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    background-color: #2c2c2c;
-    color: #f5f5f5;
-}
-
-.contato button {
-    padding: 15px;
     font-size: 18px;
-    background-color: #2a7ae4;
-    color: #f5f5f5;
-    border: none;
+    padding: 5px 10px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.contato button:hover {
-    background-color: #1f1f1f;
+.nav-links li a:hover {
+    background-color: rgb(42, 122, 228);
 }
 
-/* Rodapé */
+.dropdown a:after {
+    content: ' ▾';
+}
+
 footer {
-    background-color: #1f1f1f;
-    color: #f5f5f5;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    background-color: black;
+    color: white;
 }
+
